@@ -64,3 +64,30 @@ body{
     border-radius: 50%;
     transition: all 0.5s;
 }
+
+@media (max-width: 768px) {
+    .box{
+        width: 580px;
+    }
+    .box p {
+        font-size: 1.5rem;
+        right: 26px;
+    }
+}
+@media (max-width: 768px) {
+    .box{
+        width: 300px;
+    }
+    .box h4 {
+        font-size: 1.5rem;
+    }
+    .box textarea {
+       width: 100% !important;
+    }
+    .box p{
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+    }
+}
