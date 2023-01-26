@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#7694fe , #4c7df8);
+}
+.container {
+    background-color: #ebf2ff;
+    width: 90%;
+    max-width: 37.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
