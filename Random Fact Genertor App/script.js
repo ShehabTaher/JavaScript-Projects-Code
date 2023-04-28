@@ -9,12 +9,14 @@ let options = {
 let url = "https://api.api-ninjas.com/v1/facts?limit=1";
 
 let generateQuote = () => {
-  fetch(url)
-  .then(data => data.json())
-  .then((data) => {
-      fact.innerText = data[0].fact
-  })
-}
+  fetch(url, options)
+    .then((res) => res.json())
+    .then((data) => {
+      fact.innerText = data[0].fact;
+    });
+  // fact.innerText = "shehab"
+  // console.log("hello")
+};
 // TODO : Error Here
 btn.addEventListener("click", generateQuote);
 window.addEventListener("load", generateQuote);
